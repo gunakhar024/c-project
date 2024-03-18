@@ -3,12 +3,12 @@ pipeline {
   stages {
     stage("Clone Repo"){
       steps{
-        sh 'git clone https://github.com/VijayKeerthan/c-project.git test-repo2'
+        sh 'git clone https://github.com/VijayKeerthan/c-project.git test-repo3'
       }
     }
     stage("Build project"){
       steps {
-        sh 'make all'
+        sh 'gcc test.c -o app'
       }
     }
   }
