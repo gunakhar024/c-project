@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage("Clone Repo"){
       steps{
-        sh 'sudo rm -rf .git'
+        sh 'rm -rf /var/lib/jenkins/workspace/test/c-project/.git'
         sh 'git clone https://github.com/VijayKeerthan/c-project.git'
       }
     }
