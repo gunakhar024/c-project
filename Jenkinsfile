@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage("Clone Repo"){
       steps{
-        sh 'git clone https://github.com/VijayKeerthan/c-project.git test-repo4'
+        sh 'git clone https://github.com/VijayKeerthan/c-project.git'
       }
     }
     stage("Build project"){
